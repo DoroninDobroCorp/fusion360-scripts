@@ -1,0 +1,12 @@
+{
+	"autodeskProduct":	"Fusion",
+	"type":	"script",
+	"author":	"Vovka",
+	"description":	{
+		"":	"in name"
+	},
+	"version":	"",
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true,
+	"iconFilename":	"ScriptIcon.svg"
+}
