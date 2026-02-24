@@ -3,9 +3,9 @@
 	"type":	"script",
 	"author":	"Vovka",
 	"description":	{
-		"":	"inName"
+		"":	"Calculates bounding box dimensions for all unique components and writes them to the Description field."
 	},
-	"version":	"",
+	"version":	"1.0.0",
 	"supportedOS":	"windows|mac",
 	"editEnabled":	true,
 	"iconFilename":	"ScriptIcon.svg"

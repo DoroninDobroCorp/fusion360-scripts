@@ -3,9 +3,9 @@
 	"type":	"script",
 	"author":	"Vovka",
 	"description":	{
-		"":	"in name"
+		"":	"Draws a bounding box rectangle and center point for all geometry in the active sketch."
 	},
-	"version":	"",
+	"version":	"1.0.0",
 	"supportedOS":	"windows|mac",
 	"editEnabled":	true,
 	"iconFilename":	"ScriptIcon.svg"
