@@ -1,3 +1,132 @@
+🇬🇧 [English](#-english) | 🇷🇺 [Русский](#-русский)
+
+---
+
+# 🇬🇧 English
+
+# 🛠 Fusion 360 Scripts
+
+> A collection of handy scripts for [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/) that automate routine 3D-modeling tasks.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Fusion 360](https://img.shields.io/badge/Autodesk-Fusion%20360-orange.svg)](https://www.autodesk.com/products/fusion-360/)
+[![Python](https://img.shields.io/badge/Python-3.x-yellow.svg)](https://www.python.org/)
+
+---
+
+## 📦 Scripts
+
+### CalculateDimensions
+
+Automatically calculates the **overall dimensions** of every unique component in an assembly and writes them to the Description field.
+
+- Processes all occurrences while skipping duplicates
+- Ignores components with no bodies (empty or utility components)
+- Converts dimensions from internal units (cm) to **mm**
+- Sorts dimensions in descending order: `Dimensions: X × Y × Z mm`
+
+> 💡 Great for quickly estimating part sizes and preparing BOMs.
+
+---
+
+### FindBoundingBox
+
+Draws a **bounding rectangle** and a **center point** for all geometry in the active sketch.
+
+- Analyzes every curve in the current sketch
+- Draws 4 construction lines along the boundaries
+- Adds a point at the geometric center
+- Requires the sketch to be in edit mode
+
+> 💡 Useful for alignment, finding the centroid of a contour, and creating guide lines.
+
+---
+
+### TheOneParam
+
+Links **all user parameters** to a single chosen master parameter through proportional coefficients.
+
+- Lets you pick the master parameter from a list
+- Calculates a `value / master` ratio for each parameter
+- Updates expressions to: `MasterParam * coefficient`
+- Stores a `RelativeValue` attribute in the `OpenBOM` namespace
+- Detailed log of every operation
+
+> 💡 Perfect for parametric models — change one parameter and the entire model scales proportionally.
+
+---
+
+## 🚀 Installation
+
+1. **Clone** the repository:
+   ```bash
+   git clone https://github.com/DoroninDobroCorp/fusion360-scripts.git
+   ```
+
+2. **Copy** the desired script folder into the Fusion 360 scripts directory:
+
+   | OS      | Path                                                                                   |
+   |---------|----------------------------------------------------------------------------------------|
+   | Windows | `%APPDATA%\Autodesk\Autodesk Fusion 360\API\Scripts\`                                  |
+   | macOS   | `~/Library/Application Support/Autodesk/Autodesk Fusion 360/API/Scripts/` |
+
+3. In Fusion 360, open **Utilities → Scripts and Add-Ins** (or press <kbd>Shift</kbd>+<kbd>S</kbd>).
+
+4. Click **"+"** next to "My Scripts", point to the script folder — it will appear in the list.
+
+5. Select the script and click **Run**.
+
+---
+
+## 🧰 Requirements
+
+- **Autodesk Fusion 360** (latest version)
+- The scripts use Fusion 360's built-in Python interpreter — no additional dependencies required
+
+---
+
+## 📁 Project Structure
+
+```
+fusion360-scripts/
+├── CalculateDimensions/
+│   ├── CalculateDimensions.py          # Main script
+│   ├── CalculateDimensions.manifest    # Script metadata
+│   └── ScriptIcon.svg                  # Icon
+├── FindBoundingBox/
+│   ├── FindBoundingBox.py
+│   ├── FindBoundingBox.manifest
+│   └── ScriptIcon.svg
+├── TheOneParam/
+│   ├── TheOneParam.py
+│   ├── TheOneParam.manifest
+│   └── ScriptIcon.svg
+├── LICENSE
+└── README.md
+```
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! If you have ideas for new scripts or improvements, please open an [Issue](https://github.com/DoroninDobroCorp/fusion360-scripts/issues) or submit a PR.
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT](LICENSE) license.
+
+---
+
+<p align="center">
+  <i>Made with ❤️ for the Fusion 360 community</i>
+</p>
+
+---
+
+# 🇷🇺 Русский
+
 # 🛠 Fusion 360 Scripts
 
 > Набор полезных скриптов для [Autodesk Fusion 360](https://www.autodesk.com/products/fusion-360/), автоматизирующих рутинные задачи при 3D-моделировании.
